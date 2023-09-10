@@ -13,7 +13,14 @@
 		<link rel="stylesheet" type="text/css" href="css/main.css" />
 	</head>
 	<body>
-		<h1>hello</h1>
+		<h1>Hunters</h1>
+		<ul class="hunters">
+			<% for(let i=0; i < info.length; i++) {%>
+			<li class="hunter">
+				<span><%= info[i].name %></span>
+			</li>
+			<% } %>
+		</ul>
 		<script type="text/javascript" src="js/main.js"></script>
 	</body>
 </html>
